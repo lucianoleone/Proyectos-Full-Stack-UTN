@@ -1,0 +1,139 @@
+Formulario 01
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-Tarea01</title>
+</head>
+<body>
+    <div>
+        <h1>General Admission</h1>
+
+        <form>
+            <div>
+                <span>Name</span>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                <br>    <br>
+
+                <span>Email</span>
+                <input type="text" name="Email" id="Email" placeholder="sample@example.com" autocomplete="email">
+                <br>    <br>
+
+                <span>Gender</span>
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+                <br>    <br>
+
+                <span>Phone</span>
+                <input type="text" name="phone" id="phone">
+                <br>    <br>
+
+                <span>Emergency Contact</span>
+                <input type="text" name="emergency" id="emergency">
+                <br>    <br>
+
+                <span>Do you require parking?</span>
+                <br>    
+                <input type="radio" id="parkyes" name="parking" value="yes">
+                <label for="parkyes">Yes</label>
+                <input type="radio" id="parkno" name="parking" value="No">
+                <label for="parkno">No</label>
+                <br>    <br>
+
+                <span>What is your room preference?</span>
+                <br>
+                <input type="radio" name="room" id="singleroom">
+                <label for="singleroom">Single Room</label>
+                <br>
+                <input type="radio" name="room" id="sharedroom">
+                <label for="sharedroom">Shared Room</label>
+                <br>
+                <input type="radio" name="room" id="noroom">
+                <label for="noroom">No Room Needed</label>
+                <br> <br>
+            </div>
+            
+            <div>
+                <span>Do you have dietary restrictions?</span> <br>
+                <input type="radio" id="none" name="allergy" value="None">
+                <label for="none">None</label><br>
+                <input type="radio" id="vegetarian" name="allergy" value="Vegetarian">
+                <label for="vegetarian">Vegetarian</label><br>
+                <input type="radio" id=glutten-allergy name="allergy" value=glutten-allergy>
+                <label for="glutten-allergy" >Glutten Allergy</label><br>
+                <input type="radio" id="lactose-allergy" name="allergy" value=lactose-alergys>
+                <label for="lactose-alergys" >Lactose Allergys</label><br>
+                <input type="radio" id="nut-allergy" name="allergy" value=nut-alergys>
+                <label for="nut-alergys">Nut Allergys</label><br>
+                <input type="radio" id="shellfish-allergy" name="allergy" value=shellfish-alergys>
+                <label for="shellfish-allergy" >Shellfish Allergys</label>
+            </div>
+            <div>
+                <span>What activities will you atend?</span><br>
+                <input type="radio" name="activities" id="awardgaladinner">
+                <label for="awardgaladinner">Awards Gala Dinner</label><br>
+                <input type="radio" name="activities" id="luncheon">
+                <label for="luncheon">Luncheon</label><br>
+                <input type="radio" name="activities" id="townhall">
+                <label for="townhall">Town Hall</label>
+            </div>
+            <div>
+                <span>Do you want to see the listo of other arrendees and their profiles on the oficial event app</span><br>
+                <input type="radio" name="otherattendees" id="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="otherattendees" id="no">
+                <label for="no">  No </label>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+Formulario 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Request Form</title>
+
+</head>
+<body>
+    <h1>Appointment Request Form</h1>
+    <span>Let us know how we can help you</span><br>
+    <br>
+    <span>Full Name</span><br>
+    <input type="text" id="firstname" name="firstname">
+    <label for="firstname">First Name</label>
+    <input type="text" id="lastname" name="lastname">
+    <label for="lastname"> Last Name</label>
+    <br>
+    <span>Contact Number</span><br>
+    <input type="number" id="contactnumber" name="contactnumber" autocomplete="tel" placeholder="0000-000-0000"><br>
+    <label for="contactnumber">Please enter a valid phone number</label>
+    <span>Email Address </span><br>
+    <input type="email" name="email" id="email"  autocomplete="email"><br>
+    <label for="email">example@example.com </label><br>
+    <span> <b>Address</b></span><br>
+    <input type="text" name="Address" id="Address" autocomplete="address-level1"><br>
+    <label for="Address">Street Address </label><br>
+    <input type="text" name="Address2" id="Address2" autocomplete="address-level2"><br>
+    <label for="Address2">Street Address line 2</label><br>
+    <input type="text" name="city" id="city" autocomplete="address-level3"><br>
+    <label for="city">City</label><br>
+    <input type="text" name="state" id="state" autocomplete="address-level3"><br>
+    <label for="state">State/Province</label><br>
+    <input type="number" id="zipcode" name="zipcode" autocomplete="postal-code" ><br>
+    <label for="zipcode">Postal/Zip Code</label>
+
+    
+
+</body>
+</html>

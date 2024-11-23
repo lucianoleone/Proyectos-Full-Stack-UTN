@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: rgb(255, 229, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.divpagos{
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 2px rgba(145, 145, 145, 0.308); 
+}
+.titulocontainer{   
+    color: black;
+    font-size: 19px;
+    font-style: bold;
+    font-weight: 500;
+    text-align: left;
+    
+}
+.imgpagos {
+    margin-top: 20px;
+    width: 75%;
+    background-color: white;
+}
+
+.texto{
+    display: block;
+    font-size: 16px;
+    color: rgb(135, 135, 135);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    word-spacing: 2.5px;
+    
+}
+.botonancla{
+    display: block;
+    text-decoration: none;
+    margin-top: 40px;
+    width: 180px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgb(225, 235, 250);
+    text-align: center;
+    color: rgb(115, 169, 250);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+

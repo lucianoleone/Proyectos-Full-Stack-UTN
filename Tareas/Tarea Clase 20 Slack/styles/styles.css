@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    display: flex;
+}
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 10px;
+    width: 250px;
+}

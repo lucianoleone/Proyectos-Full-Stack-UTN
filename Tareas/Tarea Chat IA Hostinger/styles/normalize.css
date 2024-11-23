@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+:root{
+    --caracter:#673de5;
+    --fondotexto: rgb(240, 241, 245);
+    --iconos: rgb(141, 141, 143);
+    --texto-light: gray;
+}

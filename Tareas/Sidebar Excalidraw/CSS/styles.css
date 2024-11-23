@@ -1,0 +1,93 @@
+/* Incluimos iconos de bootstrap*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Incluimos fuentes de google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+:root
+{
+    --text-normal: rgb(169, 169, 171);
+    --text-light:rgb(150, 150, 150);
+    --text-highlight: #6965DB;
+    --text-highlight-light: rgb(199, 199, 242);
+    --container-border: rgb(241, 240, 255);
+    --container-background: rgba(255, 255, 255, 0.849);
+    --secundarioOscuro: rgb(233,287,2);
+    --blanco: #fff;
+    --negro: #000;
+    --fondo-body: rgb(247, 249, 250);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Assistant", sans-serif;
+    font-size: 14px;
+}
+body{
+    background-color: var(--fondo-body);
+    color:rgb(65, 65, 65);
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 240px;
+    border: 1px solid  var(--container-border);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--container-background);
+    box-shadow: 1px 1px 2px rgba(145, 145, 145, 0.308);
+}
+.sidebar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--container-border);
+
+}
+.sidebar-list-item{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 17px;
+    width: 200px;
+    gap: 10px;
+}
+
+.sidebar-list-itemshortcut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 17px;
+    width: 200px;
+}
+.sidebar-list-item-command{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sidebar-list-item-shortcut{
+    color: var(--text-light);
+    font-weight: 300;
+}
+
+.sidebar-list-itemviolet{
+    color:var(--text-highlight);
+    font-weight: 700;
+}
+.sidebar-list-itemviolet-shorcut{
+    color:var(--text-highlight-light);
+    font-weight: 600;
+}
+
