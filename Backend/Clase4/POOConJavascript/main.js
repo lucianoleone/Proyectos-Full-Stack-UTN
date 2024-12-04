@@ -56,6 +56,14 @@ class Empleado {
     }
 }
 
+class Pasante extends Empleado {
+    constructor(nombre, puesto, sueldo, area, tiempoPasantia) {
+        super(nombre, puesto, sueldo, area)
+        this.tiempoPasantia = tiempoPasantia
+    }
+}
+
+const pasante1 = new Pasante('Analia', 'Desarrollador', 10000, 'Desarrollo', 20)
 const empleado1 = new Empleado('Analia', 'Desarrollador', 10000, 'Desarrollo')
 const empleado2 = new Empleado('Juan', 'Administrativo', 1000, 'Compras')
 const empleado3 = new Empleado('German', 'Vendedor', 23000, 'Ventas')
@@ -65,3 +73,58 @@ empleado3.presentarse()
 console.log(`El sueldo neto de ${empleado1.nombre} es: $ ${empleado1.obtnerSueldoNeto()}`) 
 console.log(`El sueldo neto de ${empleado2.nombre} es: $ ${empleado2.obtnerSueldoNeto()}`) 
 console.log(`El sueldo neto de ${empleado3.nombre} es: $ ${empleado3.obtnerSueldoNeto()}`)
+console.log(`El pasante ${pasante1.nombre} asiste ${pasante1.tiempoPasantia} horas por semana`)
+
+// Vehiculo
+//     -velocidad_en_km_x_hora
+//     -modelo
+//     -marca
+//     -color
+//     -precio
+// Bicicleta
+//     -velocidad_en_km_x_hora
+//     -modelo
+//     -marca
+//     -color
+//     -precio
+//     -rodado
+//     -tipo_de_freno
+// Auto
+//     -velocidad_en_km_x_hora
+//     -modelo
+//     -marca
+//     -color
+//     -precio
+//     -motor
+//     -puertas
+class Vehiculo {
+    constructor(velocidad_en_km_x_hora, modelo, marca, color, precio) {
+        this.velocidad_en_km_x_hora = velocidad_en_km_x_hora
+        this.modelo = modelo
+        this.marca = marca
+        this.color = color
+        this.precio = precio
+    }
+}
+
+class Bicicleta extends Vehiculo {
+    constructor(velocidad_en_km_x_hora, modelo, marca, color, precio, rodado, tipo_de_freno) {
+        super(velocidad_en_km_x_hora, modelo, marca, color, precio)
+        this.rodado = rodado
+        this.tipo_de_freno = tipo_de_freno
+    }
+}
+
+class Auto  extends Vehiculo {
+    constructor(velocidad_en_km_x_hora, modelo, marca, color, precio, motor, puertas) {
+        super(velocidad_en_km_x_hora, modelo, marca, color, precio)
+        this.motor = motor
+        this.puertas = puertas
+    }
+}
+
+const bicicleta1= new Bicicleta(30, 'Trek', 'SLP', 'Negro', 450000, 29, 'Disco')
+const civic = new Auto(200, 'Civic', 'Honda', 'Gris', 50000000, 'V6', 4)
+
+console.log(bicicleta1)
+console.log(civic)
