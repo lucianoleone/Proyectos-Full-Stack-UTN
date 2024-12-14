@@ -51,7 +51,6 @@ presentarse(){} es un metodo que genera un texto con la presentacion del emplead
 */
 type Puesto = 'Desarrollador' | 'Tester'| 'Diseñador'| 'Administrativo'| 'RH'
 
-
 class Empleado1 {
     nombre : string
     sueldo : number
@@ -59,7 +58,7 @@ class Empleado1 {
     id_empleado : number
     empresa : string = 'Schneider'
     antiguedad : number
-    puesto : Puesto
+    puesto : Puesto 
     constructor (
         nombre : string, 
         sueldo : number, 
@@ -108,8 +107,8 @@ class Pasante1 extends Empleado1 {
 
 }
 
-const Luciano = new Empleado1('Luciano',750000, 2022, 1, ''  
+const Pepe = new Empleado1('Pepe', 350000, 2020, 2, 'Diseñador')
 
-Luciano.presentarse()
-Luciano.hacerCosasDePasante()
+// Luciano.presentarse()
+// Luciano.hacerCosasDePasante()
 
