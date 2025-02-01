@@ -1,5 +1,7 @@
 //console.log('hola perros');
 
-const filesystem = require('fs') //Es un import pero antiguo (CommonJS)
+// const filesystem = require('fs') //Es un import pero antiguo (CommonJS)
 
-filesystem.writeFileSync('archivo.txt', 'hola perros', {encoding: 'utf-8'});
+// filesystem.writeFileSync('archivo.txt', 'hola perros', {encoding: 'utf-8'});
+
+console.log("hola mundo desde node js")
