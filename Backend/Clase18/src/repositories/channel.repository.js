@@ -5,8 +5,10 @@ import { ServerError } from "../utils/error.utils.js";
 import workspaceRepository from "./workspace.repository.js";
 
 class ChannelRepository {
-    async findChannelById (channel_id){
-        return await Channel.findById(channel_id).populate('workspace')
+    async findChannelById(channel_id){
+        //populate expande workspace y me trae el registro asociado como un subobjeto
+        const channel_found = await Channel.findById(channel_id).populate('workspace')
+        return channel_found
     }
     async createChannel({ name, workspace_id, user_id }) {
         const workspace_found = await workspaceRepository.findWorkspaceById(workspace_id)

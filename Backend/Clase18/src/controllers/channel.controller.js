@@ -50,8 +50,9 @@ export const sendMessageToChannelController = async (req, res) =>{
         const user_id = req.user[AUTHORIZATION_TOKEN_PROPS.ID]
         const {content} = req.body
  
-
-        const new_message = await messageRepository.createMessage({sender_id: user_id, channel_id, content})
+        console.log('Los valores del mensaje son: ',{channel_id, user_id, content})
+        const new_message = await messageRepository.create({sender_id: user_id, channel_id, content})
+        console.log(new_message)
         res.json({
             ok: true,
             message: 'Message created',

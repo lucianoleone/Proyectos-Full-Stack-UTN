@@ -114,7 +114,7 @@ export const loginController = async (req, res) => {
                 username: user_found.username,
                 email: user_found.email},                    //lo que queremos guardar en el token
                 ENVIROMENT.SECRET_JWT_KEY,  //clave con la que vamos a firmar
-                {expiresIn: '2h'})         //fecha de expiracion del token
+                {expiresIn: '24h'})         //fecha de expiracion del token
         return res.json({
             ok: true, 
             status: 200,
@@ -124,7 +124,19 @@ export const loginController = async (req, res) => {
             }
         })
     } catch (error) {
-        
+        console.log('error en el registro', error)
+        if(error.status){
+            return res.send({
+                ok: false,
+                message: error.message,
+                status: error.status
+            });
+        }
+        return res.send({
+            ok: false,
+            message: error.message,
+            status: 500
+        });
     }
 }
 

@@ -19,7 +19,7 @@ app.use(express.json())
 //     res.send({ok: true})
 // })
 //app.use('/api/users',deleteUserRouter)
-app.use('/api/product',productRouter)
+app.use('/api/products',productRouter)
 app.listen(PORT,()=>{
     console.log(`el servidor esta ejecutandose en http://localhost:${PORT}`)
 })
